@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*==========================================================*/
+body{
+   
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    height: 100%;
+}
+
+/*====================NAVEGACION================== */
+
+.titulo_web{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #00c9ff;
+  }
+
+header {
+    background-color: #555;
+
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 15px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav a:hover{
+    border-bottom: 2px solid #00c9ff;
+  }
+
+.animaciones{transition: transform 0.6s ease;font-size: 22px;}
+.animaciones:hover{transform: scaleX(-1);}
+.iconos{
+    font-size: 36px;
+}
+
+
+
+/*==================BIENVENIDA=====================*/
+
+.title{
+    color: #424949;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 0.8em 0 .4;
+    margin: 2em 0em 1em 0em;
+
+}
+.tx{
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 2px solid /*#ABEBC6*/#f2f2f2;
+}
+
+.bienvenida{
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:auto;
+    display: flex;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    height: 445px;
+    width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  }
+  .presentacion{
+    padding:30px 10px; 
+  }
+  .titulo_1{
+    text-align: center;
+    padding-bottom: 0.3em;
+    font-size: 43px;
+    color: #424949;
+    border-bottom: 2px solid #eaebea ;
+   
+  }
+  .texto_1{
+    color:#222;
+    font-weight: 300;
+    font-size: 19px;
+  }
+  .video{
+    padding: 3px 3px 3px 3px;
+  }
+
+
+
+/*=====================LUGARES TURISTICOS===========*/
+
+/* Estilo para la sección de destino y carrousel */
+
+.content-img{
+    width: 900px;
+    overflow: hidden;
+    height:450px;
+    }
+
+    .content-img img{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+
+.destination {
+    flex-grow: 1; /* Esta sección crecerá para llenar el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 1em 0em;
+}
+
+/* Estilo para el título "Lugares Turísticos" */
+.destination h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de lugares turísticos */
+
+.tourist-spot {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f8f8; /* Fondo para destacar cada lugar turístico */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de elevación */
+}
+
+.tourist-spot img {
+    max-width: 100%;
+}
+
+/* Estilo para el título del lugar turístico */
+.tourist-spot h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo para la descripción del lugar turístico */
+.tourist-spot p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilo para las coordenadas del lugar turístico */
+.tourist-spot .coordinates {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* styles.css */
+
+/* ... Otros estilos ... */
+
+/* Estilo para el carrusel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #033f49;
+}
+
+.carousel-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilo para la información del carrusel */
+.carousel-caption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+}
+
+.carousel-caption h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.carousel-caption a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Estilo para los controles del carrusel */
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background-color: #45b5aa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Estilo para las flechas de control */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+
+/*=====================EXCURSIONES==================*/
+
+.exc{
+    font-family: 'Playfair Display', serif;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Excursiones{
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 43px;
+    color: #555;
+    border-bottom: 3px solid #00c9ff;
+}
+
+.gallery{
+    /*padding-bottom: 1em;*/
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    grid-auto-rows: 270px;
+    /* background: linear-gradient(90deg, rgba(3,204,184,0.788953081232493) 35%, rgba(167,255,242,0.8477766106442577) 100%);Nadia*/
+    grid-template-areas: 
+    "img1 img1 img2 img2"
+    "img3 img3 img4 img4"
+    "img5 img5 img6 img6";
+    /*"img7 img7 img8 img8"*/
+    
+    gap: .8em;
+}
+
+.gallery__picture{
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery__picture::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(12, 18, 18, 0.251);
+    transform: scale(0);
+    transition: transform .4s;
+    /*color: rgba(0, 255, 247, 0.548);*/
+    color:#F2F3F4;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gallery__picture--g1::before{
+    content: "Bariloche";
+}
+.gallery__picture--g2::before{
+    content: "Cerro Campanario";
+}
+.gallery__picture--g3::before{
+    content: "Cerro Catedral";
+}
+.gallery__picture--g4::before{
+    content: "Cerro Tronador";
+}
+.gallery__picture--g5::before{
+    content: "Cerro Otto";
+}
+.gallery__picture--g6::before{
+    content: "Lago Correntoso";
+}
+
+
+/*
+.gallery__picture--g7::before{
+    content: "Playas de Bariloche";
+}
+
+.gallery__picture--g8::before{
+    content: "Ruta de los 7 lagos";
+}
+*/
+.gallery__picture:hover::before{transform: scale(1);}
+.gallery__picture--g1{grid-area: img1;}
+.gallery__picture--g2{grid-area: img2;}
+.gallery__picture--g3{grid-area: img3;}
+.gallery__picture--g4{grid-area: img4;}
+.gallery__picture--g5{grid-area: img5;}
+.gallery__picture--g6{grid-area: img6;}
+/*
+.gallery__picture--g7{grid-area: img7;}
+.gallery__picture--g8{grid-area: img8;}
+*/
+.gallery__img{
+    width: 500px;
+    height: 100%;
+    object-fit:cover ;
+}
+/*-------------------------------------------*/
+
+/*================GASTRONOMIA==============*/
+
+.title-rest{
+  margin: auto;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #424949;
+}
+
+.targetas{
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 15px 20px;
+    /*margin: 0px 30px;*/
+    width: 450px;
+    height: 260px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px #033f49;
+}
+.img{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.card .content{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60px 110px 50px;
+    padding: 10px 10px;
+}
+
+.card .content .titl h3{
+    color: #008f7a;
+}
+
+.card .content .text{
+    margin-top: 15px;
+}
+.card .content .text ul li{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+.map{
+    color:rgba(57,54,52,0.73);
+    font-size:14px;
+    margin-top:3px;
+    margin-left:3px;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+.map:hover{
+    color: #008f7a;
+    text-decoration: underline;
+    transition: all 0.8s;
+}
+
+.cont-btn{
+    background-color:#008f7a;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    transition: all 1.2s;
+}
+.cont-btn:hover{
+    background-color:#08c9ac;
+}
+
+.btn-link{
+    margin: 0px 6px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+/*===================HOTELES=================*/
+
+.contenedor_hoteles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery_hoteles{
+    /*padding-bottom: 1em;*/
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    grid-auto-rows: 250px;
+    /* background: linear-gradient(90deg, rgba(3,204,184,0.788953081232493) 35%, rgba(167,255,242,0.8477766106442577) 100%);Nadia*/
+    grid-template-areas:  
+    "img7 img7 img8 img8 img9 img9"
+    "img10 img10 img11 img11 img12 img12";
+    /*"img7 img7 img8 img8";*/
+    
+    gap: .8em;
+}
+
+.hoteles__pic{
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hoteles__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 18, 18, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    border-radius: 28px;
+    text-decoration: none; 
+}
+
+.hoteles__pic:hover .hoteles__overlay {
+    opacity: 1; 
+}
+
+/*
+.hoteles__pic--g7::before{
+    content: " Hotel Four Seasons";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+      
+} 
+.hoteles__pic--g8::before{
+    content: "Hotel Cassa Lepage Art";
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hoteles__pic--g9::before{
+    content: "Hotel Hilton";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoteles__pic--g10::before{
+    content: "Hotel Alvear Palace";
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoteles__pic--g11::before{
+    content: "Hotel Madero";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoteles__pic--g12::before{
+    content: "Hotel Faena";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*
+.g7::before{
+    content: "Hotel Palladio";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.g8::before{
+    content: " Hotel Howard Johnson";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+*/
+ .hoteles__pic:hover::before{
+    transform: scale(1); }
+
+
+.hoteles__pic--g7{
+    grid-area: img7;
+}
+.hoteles__pic--g8{
+    grid-area: img8;
+}
+.hoteles__pic--g9{
+    grid-area: img9;
+}
+.hoteles__pic--g10{
+    grid-area: img10;
+}
+.hoteles__pic--g11{
+    grid-area: img11;
+}
+.hoteles__pic--g12{
+    grid-area: img12;
+}
+/*
+.gallery__picture--g7{
+    grid-area: img7;
+}
+.gallery__picture--g8{
+    grid-area: img8;
+}*/
+
+.hoteles__img{
+    width: 450px;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 23px;
+    border: 0.3px solid #7873f5;
+}
+
+
+/*===============FOOTER========================*/
+
+.footer{
+    margin: auto;
+    background-color: #555;
+    bottom:0;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.footer i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    /*
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;*/
+   
+}

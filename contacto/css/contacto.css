@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+/*=============NAVEGACION=============*/
+.titulo_web{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #00c9ff;
+  }
+header {
+    width: 100%;
+    /*background-color: #333; Tomas*/
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav a:hover{
+    border-bottom: 2px solid #00c9ff;
+  }
+
+.animaciones{transition: transform 0.6s ease;font-size: 22px;}
+.animaciones:hover{transform: scaleX(-1);}
+
+
+/*===============FORMULARIO=============*/
+
+.titulo_1{
+    display: flex;
+    align-items: center;
+    text-align: center;   
+    margin-bottom: 10px;
+}
+.titulo_1 h2{
+    margin: auto;
+    color: rgb(33, 166, 176);
+    font-size: 30px;
+    border: 2px;
+}
+
+body{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+main{
+    
+   
+   /* align-items: center;
+    justify-content: center;*/
+    
+}
+section{
+    
+    display: flex;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 800px;
+}
+
+form {
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 30px 0px;
+    box-shadow: 0 0 20px rgba(0,0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    height: 780px;
+}
+
+.input-group {
+    display: block;
+    flex-direction: column;
+    padding: 0 20px;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    /*text-align: center;*/
+}
+.input-group p{
+    margin: 0 10px;
+}
+
+h1{
+    display: flex;
+    text-align: center;
+    color: blue;
+    font-size: 35px;
+}
+
+label{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600px;
+    margin-bottom: 15px;
+}
+.datos{
+    width: 300px;
+}
+
+input, textarea{
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(110, 245, 243);
+    border: 1.5px solid rgb(9, 54, 137);
+    color: blueviolet;
+    outline: none;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: rgb(41, 166, 156);
+}
+/*
+.cont_input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}*/
+/*
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}*/
+/*
+.form-txt{
+    color: aqua;
+    font-size: 14px;
+    font-weight: 600px;
+    text-decoration: none;
+}*/
+
+.form-txt{
+    margin-top: 40px;
+}
+.form-txt a{
+    text-decoration: none;
+}
+.check{
+    margin: 10px 10px;
+    font-size: 5px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+    color: aqua(83, 50, 50);
+    border-radius: 25px;
+    background-color: aqua;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5xs);
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+background-color: rgb(28, 121, 175);
+}
+
+@media(max-width:991px) {
+        body {
+            /*padding: 30px;*/
+            width: 100%;
+        }
+        input {
+            padding: 15px 10px;
+        }
+}
+
+/*===============FOOTER========================*/
+
+.footer{
+    margin: auto;
+    background-color: #555;
+    bottom:0;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.footer i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    /*
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;*/
+   
+}
+

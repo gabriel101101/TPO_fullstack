@@ -1,0 +1,173 @@
+
+
+
+/* ... Otros estilos ... 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background: linear-gradient(90deg, rgba(57,197,221,1) 35%, rgba(181,240,251,1) 100%);
+    
+}*/
+
+/* Estilo para la sección de destino y carrousel */
+
+.content-img{
+    width: 700px;
+    overflow: hidden;
+    height:400px;
+    }
+
+    .content-img img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+.destination {
+    flex-grow: 1; /* Esta sección crecerá para llenar el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el título "Lugares Turísticos" */
+.destination h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de lugares turísticos */
+
+.tourist-spot {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f8f8; /* Fondo para destacar cada lugar turístico */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de elevación */
+}
+
+.tourist-spot img {
+    max-width: 100%;
+}
+
+/* Estilo para el título del lugar turístico */
+.tourist-spot h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo para la descripción del lugar turístico */
+.tourist-spot p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilo para las coordenadas del lugar turístico */
+.tourist-spot .coordinates {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.iconos{
+    font-size: 36px;
+}
+.animaciones{
+    transition: transform 0.6s ease;
+}
+
+
+.animaciones:hover{
+    transform: scaleX(-1);
+    
+}
+/* styles.css */
+
+/* ... Otros estilos ... */
+
+/* Estilo para el carrusel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+/*
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+/* Estilo para la información del carrusel */
+.carousel-caption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+}
+
+.carousel-caption h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.carousel-caption a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Estilo para los controles del carrusel */
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background-color: #45b5aa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Estilo para las flechas de control */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* ... Otros estilos ... */
