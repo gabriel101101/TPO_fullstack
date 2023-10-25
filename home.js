@@ -27,3 +27,20 @@ let svg_3=`
 <path d="M175,709.42247a1,1,0,0,1,1-1h848a1,1,0,0,1,0,2H176A1,1,0,0,1,175,709.42247Z" transform="translate(-175 -189.57753)" fill="#cbcbcb"/></svg>
 `;
 document.getElementById("svg3").innerHTML = svg_3;
+
+
+const hamburguer = document.querySelector('.hamburguer');
+const menu = document.querySelector('.menu-navegacion');
+
+/*
+console.log(menu);*/
+
+hamburguer.addEventListener('click', ()=> {
+    menu.classList.toggle("spread")
+})
+
+window.addEventListener('click', e=>{
+    if(menu.classList.contains('spread') && e.target != menu && e.target != hamburguer){
+        menu.classList.toggle("spread")
+    }
+})

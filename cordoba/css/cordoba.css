@@ -18,6 +18,9 @@ body{
 }
 
 /*====================NAVEGACION================== */
+.on_off{
+    display: none;
+}
 
 .titulo_web{
     font-size: 30px;
@@ -518,46 +521,6 @@ nav a:hover{
     opacity: 1; 
 }
 
-/*
-.hoteles__pic--g7::before{
-    content: " Hotel Four Seasons";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-      
-} 
-.hoteles__pic--g8::before{
-    content: "Hotel Cassa Lepage Art";
-   
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.hoteles__pic--g9::before{
-    content: "Hotel Hilton";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.hoteles__pic--g10::before{
-    content: "Hotel Alvear Palace";
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.hoteles__pic--g11::before{
-    content: "Hotel Madero";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.hoteles__pic--g12::before{
-    content: "Hotel Faena";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-/*
-.g7::before{
-    content: "Hotel Palladio";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.g8::before{
-    content: " Hotel Howard Johnson";
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-*/
 .hoteles__pic:hover::before{
     transform: scale(1); }
 
@@ -623,3 +586,59 @@ footer {
     background-blend-mode: multiply,multiply;*/
    
 }
+
+/*===============Media Query==============*/
+
+@media screen and (max-width: 800px){
+
+    header {
+      height: 100px;
+      padding: 10px 0;
+      
+    }
+    .enlaces{
+      display: none;
+    }
+    .on_off{
+      display: flex;
+    }
+    .hamburguer{
+      color: #00c9ff;
+      position: fixed;
+      top: 30px;
+      font-size: 30px;
+      right: 30px;
+      cursor: pointer;
+    }
+    
+    .menu-navegacion{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 30vw;
+      height: 100%;
+      /*
+      background-image: linear-gradient(to top, #30cfd0 0%, #085c67 100%);*/
+      background-color: #555;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: transform .3s ease-in-out;
+      transform: translate(110%);
+      box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    
+    }
+    
+    .spread{
+      transform: translate(0);
+      transition: all 1s;
+    }
+    .menu-navegacion a{
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    
+  
+  }
