@@ -327,18 +327,6 @@ nav a:hover{
     font-size: 2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-/*
-.gallery__picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #03afff;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    color: #6d02c5;
-    font-size: 35px;  
-}*/
 
 .gallery__picture--g1::before{content: "Bariloche";}
 .gallery__picture--g2::before{content: "Cerro Campanario";}
@@ -531,43 +519,6 @@ nav a:hover{
     border: 0.3px solid #7873f5;
 }
 
-
-@media screen and (max-width: 900px){
-
-    .hoteles__overlay {
-        width: 400px;
-        height:200px
-    }
-    
-    .hoteles__img{
-        width: 400px;
-        height:200px;
-    }
-
-
-}
-
-@media screen and (max-width: 700px){
-/*
-    .hoteles__overlay {
-        width: 250px;
-        height:200px
-    }
-    
-    .hoteles__img{
-        width: 250px;
-        height:200px;
-    }*/
-
-    .gallery_hoteles{
-    grid-template-areas:  
-    "img7 img7 img8 img8"
-    "img9 img9 img10 img10"
-    "img11 img11 img12 img12";
-    }
-}
-
-
 /*===========================================================================*/
 /*====FOOTER========FOOTER===========FOOTER=========FOOTER===============*/
 /*===========================================================================*/
@@ -644,16 +595,24 @@ nav a:hover{
 /*===========================================================================*/ 
 
 @media screen and (max-width: 900px){
+
+    /*----------EXCURSIONES----------*/
+
     gallery__img{
         width: 400px;
         
     }
-}
 
-@media screen and (max-width: 700px){
-    gallery__img{
-        width: 300px;
-        
+    /*----------HOTELES---------------*/
+
+    .hoteles__overlay {
+        width: 400px;
+        height:200px
+    }
+    
+    .hoteles__img{
+        width: 400px;
+        height:200px;
     }
 }
 
@@ -706,6 +665,24 @@ nav a:hover{
       text-decoration: none;
     }
   
-    
-  
   }
+
+  @media screen and (max-width: 700px){
+
+    /*-------------EXCURSIONES----------*/
+
+    gallery__img{
+        width: 300px;
+        
+    }
+
+    /*-------------HOTELES-----------*/
+
+    .gallery_hoteles{
+        grid-template-areas:  
+        "img7 img7 img8 img8"
+        "img9 img9 img10 img10"
+        "img11 img11 img12 img12";
+    }
+    
+}

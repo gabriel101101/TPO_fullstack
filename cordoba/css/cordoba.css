@@ -11,13 +11,15 @@
   margin: 0;
 }
 
-/*==========================================================*/
 body{
     background-color: #f2f2f2;
     height: 100%;
 }
 
-/*====================NAVEGACION================== */
+/*===========================================================================*/
+/*====NAVEGACION==========NAVEGACION===========NAVEGACION====================*/
+/*===========================================================================*/
+
 .on_off{
     display: none;
 }
@@ -65,7 +67,9 @@ nav a:hover{
 
 
 
-/*==================BIENVENIDA=====================*/
+/*===========================================================================*/
+/*====BIENVENIDA==========BIENVENIDA===========BIENVENIDA====================*/
+/*===========================================================================*/
 
 .title{
     color: #424949;
@@ -83,8 +87,6 @@ nav a:hover{
     border-bottom: 2px solid #f2f2f2;
 }
 .bienvenida{
-    /*font-family: 'Playfair Display', serif;*/
-    /*font-family: 'Merriweather', serif;*/
     font-family: 'Roboto Condensed', sans-serif;
     margin:auto;
     display: flex;
@@ -115,7 +117,9 @@ nav a:hover{
   }
 
 
-/*=====================LUGARES TURISTICOS===========*/
+  /*===========================================================================*/
+  /*====LUGARES TURISTICOS=====LUGARES TURISTICOS======LUGARES TURISTICOS======*/
+  /*===========================================================================*/
 
 /* Estilo para la sección de destino y carrousel */
 
@@ -262,8 +266,9 @@ nav a:hover{
     right: 10px;
 }
 
-
-/*=====================EXCURSIONES==================*/
+/*===========================================================================*/
+/*====EXCURSIONES========EXCURSIONES============EXCURSIONES==================*/
+/*===========================================================================*/
 
 .exc{
     font-family: 'Playfair Display', serif;
@@ -281,23 +286,27 @@ nav a:hover{
     color: #555;
     border-bottom: 3px solid #00c9ff;
 }
+
 .gallery{
-    /*padding-bottom: 1em;*/
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr 1fr));
     max-width: 100%;
-    grid-auto-rows: 270px;
-    /* background: linear-gradient(90deg, rgba(3,204,184,0.788953081232493) 35%, rgba(167,255,242,0.8477766106442577) 100%);Nadia*/
+    /*grid-auto-rows: 270px;*/
     grid-template-areas: 
     "img1 img1 img2 img2"
     "img3 img3 img4 img4"
     "img5 img5 img6 img6";
-    /*"img7 img7 img8 img8"*/
-    
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+
+    /*
     gap: .8em;
+    */
 }
 
 .gallery__picture{
@@ -314,7 +323,6 @@ nav a:hover{
     background-color: rgba(12, 18, 18, 0.251);
     transform: scale(0);
     transition: transform .4s;
-    /*color: rgba(0, 255, 247, 0.548);*/
     color:#F2F3F4;
     border-radius: 28px;
     display: flex;
@@ -323,54 +331,31 @@ nav a:hover{
     font-size: 2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.gallery__picture--g1::before{
-    content: "Las 7 Cascadas-La Falda";
-   
-}
-.gallery__picture--g2::before{
-    content: "Pekos Multiparke-Carlos Paz";
-}
-.gallery__picture--g3::before{
-    content: "Reserva Natural-Santa Rosa";
-}
-.gallery__picture--g4::before{
-    content: "La Olla-Santa Rosa";
-}
-.gallery__picture--g5::before{
-    content: "Centro de Villa Generl Belgrano";
-}
-.gallery__picture--g6::before{
-    content: "Dique los Molinos-Villa General Belgrano";
-}
 
-/*
-.gallery__picture--g7::before{
-    content: "Playas de Bariloche";
-}
+.gallery__picture--g1::before{content: "Las 7 Cascadas-La Falda";}
+.gallery__picture--g2::before{content: "Pekos Multiparke-Carlos Paz";}
+.gallery__picture--g3::before{content: "Reserva Natural-Santa Rosa";}
+.gallery__picture--g4::before{content: "La Olla-Santa Rosa";}
+.gallery__picture--g5::before{content: "Centro de Villa Generl Belgrano";}
+.gallery__picture--g6::before{content: "Dique los Molinos-Villa General Belgrano";}
 
-.gallery__picture--g8::before{
-    content: "Ruta de los 7 lagos";
-}
-*/
 .gallery__picture:hover::before{transform: scale(1);}
+
 .gallery__picture--g1{grid-area: img1;}
 .gallery__picture--g2{grid-area: img2;}
 .gallery__picture--g3{grid-area: img3;}
 .gallery__picture--g4{grid-area: img4;}
 .gallery__picture--g5{grid-area: img5;}
 .gallery__picture--g6{grid-area: img6;}
-/*
-.gallery__picture--g7{grid-area: img7;}
-.gallery__picture--g8{grid-area: img8;}
-*/
+
 .gallery__img{
     width: 500px;
     height: 100%;
     object-fit:cover ;
 }
-/*-------------------------------------------*/
-
-/*================GASTRONOMIA==============*/
+/*===========================================================================*/
+/*====GASTRONOMIA========GASTRONOMIA===========GASTRONOMIA===================*/
+/*===========================================================================*/
 
 .title-rest{
   margin: auto;
@@ -465,8 +450,9 @@ nav a:hover{
     color: #f2f2f2;
 }
 
-/*===================HOTELES=================*/
-
+/*===========================================================================*/
+/*====HOTELES========HOTELES===========HOTELES=========HOTELES===============*/
+/*===========================================================================*/
 
 .contenedor_hoteles{
     display: flex;
@@ -474,23 +460,25 @@ nav a:hover{
     align-items: center;
 }
 
-
 .gallery_hoteles{
-    /*padding-bottom: 1em;*/
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr 1fr));
+    /*grid-template-columns: repeat(4, 1fr);*/
     max-width: 100%;
-    grid-auto-rows: 250px;
-    /* background: linear-gradient(90deg, rgba(3,204,184,0.788953081232493) 35%, rgba(167,255,242,0.8477766106442577) 100%);Nadia*/
+    /*grid-auto-rows: 250px;*/
     grid-template-areas:  
     "img7 img7 img8 img8 img9 img9"
     "img10 img10 img11 img11 img12 img12";
-    /*"img7 img7 img8 img8";*/
-    
-    gap: .8em;
+
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+    /*
+    gap: .8em;*/
 }
 
 .hoteles__pic{
@@ -503,8 +491,8 @@ nav a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height:250px    ;
     background-color: rgba(12, 18, 18, 0.5); 
     display: flex;
     align-items: center;
@@ -517,49 +505,29 @@ nav a:hover{
     text-decoration: none; 
 }
 
-.hoteles__pic:hover .hoteles__overlay {
-    opacity: 1; 
-}
+.hoteles__pic:hover .hoteles__overlay {opacity: 1; }
 
-.hoteles__pic:hover::before{
-    transform: scale(1); }
+ .hoteles__pic:hover::before{transform: scale(1); }
 
-
-.hoteles__pic--g7{
-    grid-area: img7;
-}
-.hoteles__pic--g8{
-    grid-area: img8;
-}
-.hoteles__pic--g9{
-    grid-area: img9;
-}
-.hoteles__pic--g10{
-    grid-area: img10;
-}
-.hoteles__pic--g11{
-    grid-area: img11;
-}
-.hoteles__pic--g12{
-    grid-area: img12;
-}
-/*
-.gallery__picture--g7{
-    grid-area: img7;
-}
-.gallery__picture--g8{
-    grid-area: img8;
-}*/
+.hoteles__pic--g7{grid-area: img7;}
+.hoteles__pic--g8{grid-area: img8;}
+.hoteles__pic--g9{grid-area: img9;}
+.hoteles__pic--g10{grid-area: img10;}
+.hoteles__pic--g11{grid-area: img11;}
+.hoteles__pic--g12{grid-area: img12;}
 
 .hoteles__img{
     width: 450px;
-    height: 100%;
+    height:250px;
     object-fit:cover;
     border-radius: 23px;
     border: 0.3px solid #7873f5;
 }
 
-/*===============FOOTER========================*/
+
+/*===========================================================================*/
+/*====FOOTER========FOOTER===========FOOTER=========FOOTER===============*/
+/*===========================================================================*/
 
 .footer{
     margin: auto;
@@ -585,7 +553,6 @@ nav a:hover{
     padding-top: 5px;
   }
   /* Estilos adicionales según tus preferencias */
-  
   
   /*=========================formato de las columnas del footer==========*/
   .columna-izquierda  {
@@ -629,12 +596,33 @@ nav a:hover{
     color:#fff; /* Cambia el color a blanco */
   }
   
-    /*
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;*/
    
 
-/*===============Media Query==============*/
+/*============================================================================*/
+/*====@MEDIA SCREEN========@MEDIA SCREEN==========@MEDIA SCREEN===============*/
+/*===========================================================================*/ 
+
+@media screen and (max-width: 900px){
+
+    /*----------EXCURSIONES----------*/
+
+    gallery__img{
+        width: 400px;
+        
+    }
+
+    /*----------HOTELES---------------*/
+
+    .hoteles__overlay {
+        width: 400px;
+        height:200px
+    }
+    
+    .hoteles__img{
+        width: 400px;
+        height:200px;
+    }
+}
 
 @media screen and (max-width: 800px){
 
@@ -665,8 +653,6 @@ nav a:hover{
       right: 0;
       width: 30vw;
       height: 100%;
-      /*
-      background-image: linear-gradient(to top, #30cfd0 0%, #085c67 100%);*/
       background-color: #555;
       display: flex;
       flex-direction: column;
@@ -687,6 +673,24 @@ nav a:hover{
       text-decoration: none;
     }
   
-    
-  
   }
+
+  @media screen and (max-width: 700px){
+
+    /*-------------EXCURSIONES----------*/
+
+    gallery__img{
+        width: 300px;
+        
+    }
+
+    /*-------------HOTELES-----------*/
+
+    .gallery_hoteles{
+        grid-template-areas:  
+        "img7 img7 img8 img8"
+        "img9 img9 img10 img10"
+        "img11 img11 img12 img12";
+    }
+    
+}
