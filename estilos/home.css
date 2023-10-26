@@ -216,28 +216,77 @@ main{
 
 /* Estilo para el pie de página */
 
+
 /*===============FOOTER========================*/
 
 .footer{
   margin: auto;
   background-color: #555555;
   bottom:0;
+  padding-top: 55px;
 }
 .footer i{
-  margin: 0 10px;
+  margin: 0 20px;
   cursor: pointer;
+
 }
 
 footer {
   background-color: #555555;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
   width: 100%; 
+  height: 150px;
 }
+
 footer p{
-  padding-top: 10px;
+  padding-top: 5px;
 }
+/* Estilos adicionales según tus preferencias */
+
+
+/*=========================formato de las columnas del footer==========*/
+.columna-izquierda  {
+    
+  text-align: left;
+  margin: 0; /* Ancho de cada columna (ajusta según tus necesidades) */
+}
+
+.columna-derecha{
+text-align: left;
+margin:0;}
+
+.columna-izquierda h2, .columna-derecha h2 {
+  color: #00c9ff; /* Estilo para los títulos */
+}
+
+/* Estilos adicionales, como márgenes y espaciado */
+.footerul {
+  /* list-style: none; */
+  padding: 0;
+  margin: 15px;
+}
+
+.footerul li a{
+  text-decoration: none;
+}
+
+.footerli {
+  padding: 0;
+  margin:0;
+  color: #fff;
+}
+
+.columnas-container {
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex; /* Utiliza flexbox para alinear las columnas */
+  justify-content: space-between; /* Coloca espacio entre las columnas */
+}
+.enlace-footer {
+  color:#fff; /* Cambia el color a blanco */
+}
+
 /* Estilos adicionales según tus preferencias */
 
 /*=================MEDIA QUERY==============*/
