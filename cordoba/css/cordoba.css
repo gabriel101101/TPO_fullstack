@@ -587,6 +587,21 @@ body{
   .enlace-footer {
     color:#fff; /* Cambia el color a blanco */
   }
+
+  /*--==============MAPA=============MAPA===========--*/
+  /*--============================================--*/
+        
+  .mapa{
+    margin: auto;
+    width: 80%;
+    height: 290px;
+  }
+  #mi_mapa{
+    margin: auto;
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+  }
   
 /*============================================================================*/
 /*====@MEDIA SCREEN========@MEDIA SCREEN==========@MEDIA SCREEN===============*/
