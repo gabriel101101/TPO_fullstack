@@ -10,7 +10,6 @@
 }
 
 body{
-    
     background-color: #f2f2f2;
     height: 100%;
 }
@@ -21,48 +20,47 @@ body{
 
 .on_off{
     display: none;
-}
-
-.titulo_web{
+  }
+  
+  
+  .titulo_web{
     font-size: 30px;
     margin-bottom: 15px;
     color: #00c9ff;
   }
-
-header {
+  
+  header {
+    z-index: 10;
+    width: 100%;
+    height: 100px;
     background-color: #555;
-
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 15px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
+  }
+  
+  nav ul {
+      list-style: none;
+      padding: 15px;
+  }
+  
+  nav li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-}
-nav a:hover{
+  }
+  nav a:hover{
     border-bottom: 2px solid #00c9ff;
   }
-
-.animaciones{transition: transform 0.6s ease;font-size: 22px;}
-.animaciones:hover{transform: scaleX(-1);}
-.iconos{
-    font-size: 36px;
-}
-
+  
+  .animaciones{transition: transform 0.6s ease;font-size: 22px;}
+  .animaciones:hover{transform: scaleX(-1);}
 
 
 /*===========================================================================*/
@@ -87,12 +85,14 @@ nav a:hover{
 
 .bienvenida{
     font-family: 'Roboto Condensed', sans-serif;
-    margin:auto;
+    margin: auto;
     display: flex;
-    height: 445px;
-    width: 1100px;
-    border-radius: 8px;
     background-color: #7de3fd;
+    height: 445px;
+    width:1100px;
+    border-radius: 8px;
+    /*
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);*/
     border: 1px solid #999999;
   }
   .presentacion{
@@ -103,7 +103,7 @@ nav a:hover{
     padding-bottom: 0.3em;
     font-size: 43px;
     color: #424949;
-    border-bottom: 2px solid #eaebea ;
+    border-bottom: 2px solid #f2f2f2 ;
    
   }
   .texto_1{
@@ -111,15 +111,11 @@ nav a:hover{
     font-weight: 300;
     font-size: 19px;
   }
-  .video{
-    padding: 3px 3px 3px 3px;
-  }
-
-
+  .video{padding: 3px 3px 3px 3px;}
 
 /*===========================================================================*/
-  /*====LUGARES TURISTICOS=====LUGARES TURISTICOS======LUGARES TURISTICOS======*/
-  /*===========================================================================*/
+/*====LUGARES TURISTICOS=====LUGARES TURISTICOS======LUGARES TURISTICOS======*/
+/*===========================================================================*/
 
 /* Estilo para la sección de destino y carrousel */
 
@@ -131,7 +127,7 @@ nav a:hover{
 
     .content-img img{
         width: 100%;
-        height: 450px;
+        height: 500px;
         object-fit: cover;
     }
 
@@ -163,9 +159,7 @@ nav a:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de elevación */
 }
 
-.tourist-spot img {
-    max-width: 100%;
-}
+.tourist-spot img {max-width: 100%;}
 
 /* Estilo para el título del lugar turístico */
 .tourist-spot h2 {
@@ -273,7 +267,6 @@ nav a:hover{
 .exc{
     font-family: 'Playfair Display', serif;
 }
-
 .contenedor{
     display: flex;
     justify-content: center;
@@ -406,11 +399,9 @@ nav a:hover{
     grid-template-rows: 60px 110px 50px;
     padding: 10px 10px;
 }
-
 .card .content .titl h3{
     color: #008f7a;
 }
-
 .card .content .text{
     margin-top: 15px;
 }
@@ -596,8 +587,6 @@ nav a:hover{
     color:#fff; /* Cambia el color a blanco */
   }
   
-
-
 /*============================================================================*/
 /*====@MEDIA SCREEN========@MEDIA SCREEN==========@MEDIA SCREEN===============*/
 /*===========================================================================*/ 
@@ -638,6 +627,7 @@ nav a:hover{
       display: flex;
     }
     .hamburguer{
+        z-index: 20;
       color: #00c9ff;
       position: fixed;
       top: 30px;
@@ -672,6 +662,10 @@ nav a:hover{
       color: #fff;
       text-decoration: none;
     }
+
+    footer p{
+        padding-top: 20px;
+    }
   
   }
 
@@ -691,6 +685,14 @@ nav a:hover{
         "img7 img7 img8 img8"
         "img9 img9 img10 img10"
         "img11 img11 img12 img12";
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    footer p{
+        padding-top: 20px;
     }
     
 }

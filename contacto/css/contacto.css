@@ -286,6 +286,7 @@ footer p{
       display: flex;
     }
     .hamburguer{
+      z-index: 20;
       color: #00c9ff;
       position: fixed;
       top: 30px;
