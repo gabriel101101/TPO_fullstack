@@ -130,6 +130,7 @@ a{
 
 .text_enlace{
   background-color: rgba(247, 243, 240, 0.719);
+  border-radius:5px;
 }
 
 .item{

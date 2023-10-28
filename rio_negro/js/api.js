@@ -1,37 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const carousels = document.querySelectorAll('.carousel-container');
 
-    carousels.forEach((carousel) => {
-        const slides = carousel.querySelectorAll('.carousel-slide');
-        let currentSlide = 0;
 
-        function showSlide(slideIndex) {
-            slides.forEach((slide, index) => {
-                if (index === slideIndex) {
-                    slide.classList.add('active');
-                } else {
-                    slide.classList.remove('active');
-                }
-            });
-        }
+let map = L.map('mi_mapa').setView([-40.7344343, -66.6176455], 15)
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        const prevButton = carousel.querySelector('.prev-button');
-        const nextButton = carousel.querySelector('.next-button');
-
-        prevButton.addEventListener('click', prevSlide);
-        nextButton.addEventListener('click', nextSlide);
-
-        // Mostrar el primer slide al cargar la página
-        showSlide(currentSlide);
-    });
-});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            }).addTo(map);
+//agregar marcador
+L.marker([-40.7344343, -66.6176455]).addTo(map).bindPopup("cordoba")
+L.marker([-40.7344343, -66.6176455]).addTo(map).bindPopup("cordoba")
