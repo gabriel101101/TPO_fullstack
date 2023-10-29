@@ -143,12 +143,15 @@ body{
 /*===========================================================================*/ 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 870px){
 
     header {
       height: 100px;
       padding: 10px 0;
       
+    }
+    nav a{
+      font-size: 15px;
     }
     .enlaces{
       display: none;
