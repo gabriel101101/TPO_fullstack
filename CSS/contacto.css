@@ -1,55 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-/*=============NAVEGACION=============*/
-.on_off{
-    display: none;
-}
-
-.titulo_web{
-    font-size: 30px;
-    margin-bottom: 15px;
-    color: #00c9ff;
-  }
-header {
-    width: 100%;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 20px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-}
-nav a:hover{
-    border-bottom: 2px solid #00c9ff;
-  }
-
-.animaciones{transition: transform 0.6s ease;font-size: 22px;}
-.animaciones:hover{transform: scaleX(-1);}
 
 
-/*===============FORMULARIO=============*/
+/*==============================================================*/
+/*===========================FORMULARIO=========================*/
+/*==============================================================*/
 
 .titulo_1{
     display: flex;
@@ -133,26 +87,7 @@ input::placeholder, textarea::placeholder
 {
     color: rgb(41, 166, 156);
 }
-/*
-.cont_input{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}*/
-/*
-.form-txt{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-}*/
-/*
-.form-txt{
-    color: aqua;
-    font-size: 14px;
-    font-weight: 600px;
-    text-decoration: none;
-}*/
+
 
 .form-txt{
     margin-top: 40px;
@@ -190,150 +125,5 @@ background-color: rgb(28, 121, 175);
         input {
             padding: 15px 10px;
         }
-}
-
-/*===============FOOTER========================*/
-
-.footer{
-  margin: auto;
-  background-color: #555555;
-  bottom:0;
-  padding-top: 30px;
-}
-.footer i{
-  margin: 0 20px;
-  cursor: pointer;
-
-}
-
-footer {
-  background-color: #555555;
-  color: #fff;
-  text-align: center;
-  width: 100%; 
-  height: 125px;
-}
-
-footer p{
-  padding-bottom: 20px;
-}
-  /* Estilos adicionales según tus preferencias */
-  
-  
-  /*=========================formato de las columnas del footer==========*/
-  .columna-izquierda  {
-      
-    text-align: left;
-    margin: 0; /* Ancho de cada columna (ajusta según tus necesidades) */
-  }
-  
-  .columna-derecha{
-  text-align: left;
-  margin:0;}
-  
-  .columna-izquierda h2, .columna-derecha h2 {
-    color: #00c9ff; /* Estilo para los títulos */
-  }
-  
-  /* Estilos adicionales, como márgenes y espaciado */
-  .footerul {
-    /* list-style: none; */
-    padding: 0;
-    margin: 15px;
-  }
-  
-  .footerul li a{
-    text-decoration: none;
-  }
-  
-  .footerli {
-    padding: 0;
-    margin:0;
-    color: #fff;
-  }
-  
-  .columnas-container {
-    width: 80%; /* Ajusta el ancho según tus necesidades */
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
-    display: flex; /* Utiliza flexbox para alinear las columnas */
-    justify-content: space-between; /* Coloca espacio entre las columnas */
-  }
-  .enlace-footer {
-    color:#fff; /* Cambia el color a blanco */
-  }
-  
-  
-    /*
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;*/
-   
-
-
-
-/*===============Media Query==============*/
-
-@media screen and (max-width: 800px){
-
-    header {
-      height: 100px;
-      padding: 10px 0;
-      
-    }
-    .enlaces{
-      display: none;
-    }
-    .on_off{
-      display: flex;
-    }
-    .hamburguer{
-      z-index: 20;
-      color: #00c9ff;
-      position: fixed;
-      top: 30px;
-      font-size: 30px;
-      right: 30px;
-      cursor: pointer;
-    }
-    
-    .menu-navegacion{
-      z-index: 10;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 30vw;
-      height: 100%;
-      /*
-      background-image: linear-gradient(to top, #30cfd0 0%, #085c67 100%);*/
-      background-color: #555;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      transition: transform .3s ease-in-out;
-      transform: translate(110%);
-      box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-    
-    }
-    
-    .spread{
-      transform: translate(0);
-      transition: all 1s;
-    }
-    .menu-navegacion a{
-      color: #fff;
-      text-decoration: none;
-    }
-  
-  }
-
-  @media screen and (max-width: 700px){
-
-    nav a{
-        font-size: 15px;
-    }
-    footer p{
-        padding-top: 20px;
-    }
-    
 }
 
