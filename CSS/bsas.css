@@ -326,12 +326,12 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.gallery__picture--g1::before{content: "Bariloche";}
-.gallery__picture--g2::before{content: "Cerro Campanario";}
-.gallery__picture--g3::before{content: "Cerro Catedral";}
-.gallery__picture--g4::before{content: "Cerro Tronador";}
-.gallery__picture--g5::before{content: "Cerro Otto";}
-.gallery__picture--g6::before{content: "Lago Correntoso";}
+.gallery__picture--g1::before{content: "CABALLITO EN TRANVÍA";}
+.gallery__picture--g2::before{content: "MUSEO QUINQUELA";}
+.gallery__picture--g3::before{content: "VISITÁ EL CENTRO ANA FRANK";}
+.gallery__picture--g4::before{content: "AVISTAJE DE AVES EN LIBERTAD";}
+.gallery__picture--g5::before{content: "CONOCÉ EL MUSEO XUL SOLAR";}
+.gallery__picture--g6::before{content: "BOTÁNICA EN EL ECOPARQUE";}
 
 .gallery__picture:hover::before{transform: scale(1);}
 
@@ -517,6 +517,22 @@ body{
     border: 0.3px solid #7873f5;
 }
 
+/*--=====================MAPA===================--*/
+  /*--============================================--*/
+        
+  .mapa{
+    margin: auto;
+    width: 80%;
+    height: 290px;
+  }
+  #mi_mapa{
+    margin: auto;
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+  }
+  
+
 /*===========================================================================*/
 /*====FOOTER========FOOTER===========FOOTER=========FOOTER===============*/
 /*===========================================================================*/
@@ -588,20 +604,6 @@ body{
     color:#fff; /* Cambia el color a blanco */
   }
 
-  /*--=====================MAPA===================--*/
-  /*--============================================--*/
-        
-  .mapa{
-    margin: auto;
-    width: 80%;
-    height: 290px;
-  }
-  #mi_mapa{
-    margin: auto;
-    width: 100%;
-    height: 280px;
-    border-radius: 5px;
-  }
   
 /*============================================================================*/
 /*====@MEDIA SCREEN========@MEDIA SCREEN==========@MEDIA SCREEN===============*/

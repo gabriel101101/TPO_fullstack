@@ -326,12 +326,12 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.gallery__picture--g1::before{content: "Bariloche";}
-.gallery__picture--g2::before{content: "Cerro Campanario";}
-.gallery__picture--g3::before{content: "Cerro Catedral";}
-.gallery__picture--g4::before{content: "Cerro Tronador";}
-.gallery__picture--g5::before{content: "Cerro Otto";}
-.gallery__picture--g6::before{content: "Lago Correntoso";}
+.gallery__picture--g1::before{content: "Las 7 Cascadas-La Falda";}
+.gallery__picture--g2::before{content: "Pekos Multiparke-Carlos Paz";}
+.gallery__picture--g3::before{content: "Reserva Natural-Santa Rosa";}
+.gallery__picture--g4::before{content: "La Olla-Santa Rosa";}
+.gallery__picture--g5::before{content: "Centro de Villa Generl Belgrano";}
+.gallery__picture--g6::before{content: "Dique los Molinos-Villa General Belgrano";}
 
 .gallery__picture:hover::before{transform: scale(1);}
 
@@ -347,6 +347,7 @@ body{
     height: 100%;
     object-fit:cover ;
 }
+
 /*===========================================================================*/
 /*====GASTRONOMIA========GASTRONOMIA===========GASTRONOMIA===================*/
 /*===========================================================================*/
@@ -601,6 +602,8 @@ body{
   .enlace-footer {
     color:#fff; /* Cambia el color a blanco */
   }
+
+  
   
 /*============================================================================*/
 /*====@MEDIA SCREEN========@MEDIA SCREEN==========@MEDIA SCREEN===============*/
