@@ -25,7 +25,7 @@ try{
 }
 
 
-function showWeather(data){
+const showWeather = (data) =>{
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
 
     const degrees = kelvinToCentigrade(temp);
@@ -43,7 +43,7 @@ function showWeather(data){
 
 }
 
-function kelvinToCentigrade(temp){
+const kelvinToCentigrade = (temp) =>{
     return parseInt(temp - 273.15);
 }
 
