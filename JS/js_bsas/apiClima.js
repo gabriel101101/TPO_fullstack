@@ -25,15 +25,18 @@ function showWeather(data){
     const degrees = kelvinToCentigrade(temp);
     const min = kelvinToCentigrade(temp_min);
     const max = kelvinToCentigrade(temp_max);
+
+    const element = document.createElement('div');
     
-    clima.innerHTML = `
+    element.innerHTML = `
     <h3>Clima en Bs. As.</h3>
     <img class="sol" src="http://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
     <h2>${degrees}°C</h2>
     <p>Max: ${max}°C</p>
     <p>Min: ${min}°C</p>
-   
     `;
+
+    clima.appendChild(element);
 
 }
 
