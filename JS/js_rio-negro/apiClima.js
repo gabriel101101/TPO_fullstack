@@ -4,19 +4,24 @@ let city = "rionegro";
 let country="Argentina";
 
 
-function callAPI(city, country){
-    
-    const apiID= '41d1d7f5c2475b3a16167b30bc4f265c';
-    const url= `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiID}`;
+const callAPI = async(city, country) =>{
 
-    fetch(url)
-    .then(data => {
-        return data.json();
-    })
-    .then(dataJSON => {
-        showWeather(dataJSON);
-        //console.log(dataJSON);
-    })
+    try{
+        
+        const apiID= '41d1d7f5c2475b3a16167b30bc4f265c';
+        const url= `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiID}`;
+    
+        const respuesta =  await fetch(url);
+    
+        const datos = await respuesta.json();
+    
+            showWeather(datos);
+            //console.log(dataJSON);
+        
+    } catch{
+        console.log(error);
+    }
+    
 }
 
 function showWeather(data){
