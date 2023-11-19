@@ -3,7 +3,7 @@ let clima = document.querySelector('.clima');
 let city = "bsas";
 let country="Argentina";
 
-
+/*
 function callAPI(city, country){
     
     const apiID= '41d1d7f5c2475b3a16167b30bc4f265c';
@@ -17,7 +17,23 @@ function callAPI(city, country){
         showWeather(dataJSON);
         //console.log(dataJSON);
     })
+}*/
+
+const callAPI = async(city, country) =>{
+    
+    const apiID= '41d1d7f5c2475b3a16167b30bc4f265c';
+    const url= `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiID}`;
+
+    const respuesta =  await fetch(url)
+    .then(data => {
+        return data.json();
+    })
+    .then(dataJSON => {
+        showWeather(dataJSON);
+        //console.log(dataJSON);
+    })
 }
+
 
 function showWeather(data){
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
