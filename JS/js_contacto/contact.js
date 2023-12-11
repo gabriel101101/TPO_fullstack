@@ -1,54 +1,55 @@
 
-let formulario = document.getElementById("mi_formulario");
+var nombre = document.getElementById('nombre');
+var apellido = document.getElementById('apellido');
+var email = document.getElementById('email');
+var telefono = document.getElementById('telefono');
+var check1 = document.getElementById('check1');
+var check2 = document.getElementById('check2');
+var check3 = document.getElementById('check3');
+var check4 = document.getElementById('check4');
+
+var error = document.getElementById('error');
+
+var form = document.getElementById('formulario');
+var contcheck=0;
 
 
-window.onload = iniciar;
-
-const iniciar = () =>{
-    document.getElementById("submit").addEventListener('click', validar, false);
-
-}
-
-
-const validaDatos = () =>{
-    var elemento1 = document.getElementById("nombre");
-    var elemento2 = document.getElementById("apellido");
-    var elemento3 = document.getElementById("email");
-    var elemento4 = document.getElementById("message");
-
-    if(elemento1.value == "" && elemento2.value == "" && elemento3.value == "" && elemento4.value == ""){
-        alert("El campo no puede ser vacio");
-        return false;
-    }
-    return true;
-}
-
-const validaTelefono = () =>{
-    var elemento = document.getElementById("telefono");
-    if(isNaN(elemento.value)){
-        alert("El campo teléfono tiene que ser numérico");
-        return false;
-    }
-    return true;
-}
-
-const validaCheck = () =>{
-    var campoCheck = document.querySelector('.check');
-    if(!campoCheck.checked){
-        alert("Debes seleccionar alguna provincia");
-        return false;
-    }
-    return true;
-}
-
-const validar = (e) =>{
-    if(validaDatos() && validaTelefono() && validaCheck() && validaCheck 
-    && confirm("Pulsa aceptar si deseas enviar el formulario")){
-        return true;
-    }else{
+    form.addEventListener('submit', function(e){
         e.preventDefault();
-        return false;
-    }
-}
+        //console.log("Enviando formulario ...");
+        var erroEvent = ['COMPLETE EL CAMPO : '];
+        var check = [check1,check2,check3,check4];
+        
+        if(nombre.value === ''){
+            erroEvent.push('"Nombre"');
+        }
+        if(apellido.value === ''){
+            erroEvent.push('"Apellido"');
+        }
+        if(email.value === ''){
+            erroEvent.push('"Email"');
+        }
+        if(message.value === ''){
+            erroEvent.push('"Mensaje"');
+        }
+
+        for(let i=0; i<4; i++){
+            if(check[i].checked === false){
+                contcheck++;
+            }
+        }
+        if(contcheck===4){
+            erroEvent.push('"Recorrido"');
+        }
+        
+        
+        if(nombre.value === '' || apellido.value === '' || email.value === '' 
+        || message.value === '' || contcheck===4){
+            alert(erroEvent);
+        }
+
+        contcheck=0;
+        return true;
+    });
 
 

@@ -18,7 +18,7 @@ try{
         showWeather(datos);
         //console.log(dataJSON);
     
-} catch{
+}catch{
     console.log(error);
 }
 
