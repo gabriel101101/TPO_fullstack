@@ -34,6 +34,7 @@ this.error=true
 },
 modificar() {
 let producto = {
+id:this.id,
 nombre:this.nombre,
 precio: this.precio,
 stock: this.stock,
@@ -48,7 +49,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro modificado")
-window.location.href = "../templates/productos.html";
+window.location.href = "../templates/comentarios.html";
 })
 .catch(err => {
 console.error(err);
