@@ -25,6 +25,7 @@ try{
 }
 
 
+
 const showWeather = (data) =>{
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
 
