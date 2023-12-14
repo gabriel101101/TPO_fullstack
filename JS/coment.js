@@ -44,10 +44,12 @@ function getData(){
   .then((comentarios) => {
       const tpl = comentarios.map((comentario) => 
       `
-      <div id="formDatos">
-      <li>${comentario.nombre}/${comentario.titulo}/${comentario.texto}</li>
-            <button type="submit"  onclick="deleteId(${comentario.id})">ELIMINAR</button>
-            <button><a href="edit.html?id =${comentario.id}" >Edit</a></button>
+      <div class="coment">
+      <h2 class="name">${comentario.nombre}</h2>
+      <h4 class="titulo">${comentario.titulo}</h4>
+      <p class="comentario">${comentario.texto}</p><br>
+            <button class="boton" type="submit"  onclick="deleteId(${comentario.id})"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="boton"><a href="edit.html?id =${comentario.id}" ><i class="fa-solid fa-pen-to-square"></i></a></button>
       </div>
       
       `);
@@ -135,7 +137,7 @@ function saveTask(e){
   console.log(postData);
   post(postData);
   //e.preventDefault();
-  alert('tarea guardada')
+  alert('Comentario guardado')
   }
 //================================================================
 
@@ -167,7 +169,7 @@ function deleteId(data){
   /*
   console.log('==========================');
   console.log(data);*/
-  alert("Producto Eliminado");
+  alert("Comentario Eliminado");
   location.reload()
 }
 

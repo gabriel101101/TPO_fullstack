@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+      background-color: #f2f2f2;
+      height: 100%px;
+  }
+
+
+.contenedor-form{
+    display: block;
+    margin-left: 200px;
+}
+
+.cont_input{
+    
+    display: flex;
+    flex-direction: column;
+ }
+.cont_input input{
+    margin: auto;
+    margin: 10px;
+   
+}
+label{
+    font-size: 22px;
+}
+
+.coment{
+    background-color: rgb(138, 202, 181);
+    margin: 10px 200px;
+    width: 500px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 150px;
+}
+.input{
+    width: 500px;
+    height: 50px;
+    font-size: 22px;
+}
+
+.input_coment{
+    width: 500px;
+    height: 100px;
+    font-size: 18px;
+
+}
+
+
+.contenedor-comentarios{
+    margin: auto;
+    height: 600px;
+   
+}
+.visitas_comentarios{
+   
+}
+.boton{
+    margin-left: 10px;
+    font-size: 22px;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+.boton2{
+    margin-left: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(138, 202, 181);
+    box-shadow: 0.5px 0.5px 0.3px 0.5px;
+}
+.boton:hover{
+    background-color: #999;
+}
+.boton2:hover{
+    background-color: #999;
+}
+.boton a{
+    text-decoration: none
+}
+.fa-solid{
+    font-size: 22px;
+    color: #777;
+}
+.btn{
+    margin-left: 210px;
+}
+
+.coment_edit{
+    margin-left: 200px;
+}

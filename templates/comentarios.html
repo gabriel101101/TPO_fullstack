@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/nav_footer.css">
     <link rel="stylesheet" href="../CSS/name_gallery.css">
+    <link rel="stylesheet" href="../CSS/comentario.css">
 
     <script src="https://kit.fontawesome.com/727e2fb7ac.js" crossorigin="anonymous"></script>
     <script src="../JS/main.js"></script>
@@ -61,19 +62,30 @@
     </header>
     
   <main>
-    <section>
-        <form action="" id="formTask">
-            <h4>Formulario</h4>
-            <div>
-                <input type="text" id="nombre" placeholder="add name" >
-                <input type="text" id="titulo" placeholder="add a todo">
-            </div>
-            <div>
-                <textarea name="" id="texto" cols="30" rows="10" placeholder="add description"></textarea>
-            </div>
-            <button type="submit">GUARDAR</button>
-        </form>
-    
+    <section >
+
+        <h2 class="title">Visitas</h2>
+
+        <p class="title" style="font-size: 30px;">Dejanos la tu opinion de tu visita</p>
+
+
+
+
+        <div class="contenedor-form">
+            <form class="formTarea" action="" id="formTask">
+            
+                <div class="cont_input">
+                    <label for="">Nombre / Usuario</label>
+                    <input class="input" type="text" id="nombre" placeholder="Nombre o Usuario" >
+                    <label for="">Titulo</label>
+                    <input class="input" type="text" id="titulo" placeholder="Titulo">
+                    <label for="">Comentario</label>
+                    <input class="input_coment" type="text" id="texto" placeholder="Comentario">
+                </div>
+                <button class="boton2"  type="submit">Enviar</button>
+            </form>
+        </div>
+        
     </section>
     <br>
     <br>
@@ -83,8 +95,14 @@
     <br>
     <br>
     <br>
-    <section>
-        <div class="" id="app"></div>
+    <section class="presentacion">
+       <div>
+        <h1 class="title" style="font-size: 35px;">Comentarios de visitas</h1>
+
+        <div class="" id="app">
+        </div>
+        
+       </div>
     </section>
 
 

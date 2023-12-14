@@ -29,16 +29,17 @@ function get_one(id){
       .then(data => {
         HTMLResponse.innerHTML = `
         
-          <h4>Formulario</h4>
-          <div>
-              <input type="text" id="nombre" placeholder="add name" value="${data.nombre}">
-              <input type="text" id="titulo" placeholder="add a todo" value="${data.titulo}">
-          </div>
-          <div>
-              <input type="text" id="texto" value="${data.texto}">
-          </div>
-          <button type="submit">Actualizar</button>
-     
+        <div class="cont_input coment_edit">
+        <p class="title" style="font-size: 30px;">Edita tus comentarios</p>
+                    <label for="">Nombre / Usuario</label>
+                    <input class="input" type="text" id="nombre" placeholder="Nombre o Usuario" value="${data.nombre}" >
+                    <label for="">Titulo</label>
+                    <input class="input" type="text" id="titulo" placeholder="Titulo" value="${data.titulo}">
+                    <label for="">Comentario</label>
+                    <input class="input_coment" type="text" id="texto" placeholder="Comentario" value="${data.texto}">
+        </div><br>
+        <button class="boton2 btn"  type="submit">Actualizar</button>
+      
         `
         console.log('Dato específico recuperado:', data);
       })
@@ -66,8 +67,8 @@ function saveTask(e){
     editData(postData);
     //e.preventDefault();
 
-    //alert('tarea actualizada')
-    location.href = 'http://localhost:5001';
+    alert('tarea actualizada')
+    //location.href = 'http://localhost:5001';
     }
 
 function editData(datos){
