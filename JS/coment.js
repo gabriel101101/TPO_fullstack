@@ -1,7 +1,7 @@
 document.getElementById('formTask').addEventListener('submit', saveTask)
 
 
-const API_URL= "http://localhost:5000";
+const API_URL= "https://gaby0101.pythonanywhere.com/";
 
 //const itemIdToDelete = 13; // Id del elemento que deseas eliminar
 const itemIdToRetrieve = 8; // Id del elemento que deseas recuperar

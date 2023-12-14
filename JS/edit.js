@@ -10,7 +10,7 @@ const id = imp[0][1]
 
 
 
-const API_URL= "http://localhost:5000";
+const API_URL= "https://gaby0101.pythonanywhere.com/";
 
 
 //TRAE UN SOLO DATO POR ID 
