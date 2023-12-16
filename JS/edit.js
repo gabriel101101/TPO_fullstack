@@ -1,54 +1,60 @@
+//const API_URL= "http://localhost:5000";
+const API_URL= "https://gaby0101.pythonanywhere.com/";
 
 let queryS = new URLSearchParams(window.location.search)
 let param = Object.fromEntries(queryS.entries())
 let imp = Object.entries(param)
-
 const id = imp[0][1]
 
+//TRAE UN SOLO DATO POR ID ==================================
+function Get_One(id){
 
+  const HTMLResponse = document.querySelector("#formTask");
 
-
-
-
-const API_URL= "https://gaby0101.pythonanywhere.com/";
-
-
-//TRAE UN SOLO DATO POR ID 
-
-function get_one(id){
-
-    const HTMLResponse = document.querySelector("#formTask");
-
-    fetch(`${API_URL}/comentarios/${id}`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Error de red - Código de estado: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        HTMLResponse.innerHTML = `
-        
-        <div class="cont_input coment_edit">
-        <p class="title" style="font-size: 30px;">Edita tus comentarios</p>
-                    <label for="">Nombre / Usuario</label>
-                    <input class="input" type="text" id="nombre" placeholder="Nombre o Usuario" value="${data.nombre}" >
-                    <label for="">Titulo</label>
-                    <input class="input" type="text" id="titulo" placeholder="Titulo" value="${data.titulo}">
-                    <label for="">Comentario</label>
-                    <input class="input_coment" type="text" id="texto" placeholder="Comentario" value="${data.texto}">
-        </div><br>
-        <button class="boton2 btn"  type="submit">Actualizar</button>
+  fetch(`${API_URL}/comentarios/${id}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error de red - Código de estado: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      HTMLResponse.innerHTML = `
       
-        `
-        console.log('Dato específico recuperado:', data);
-      })
-      .catch(error => {
-        console.error('Error en la solicitud:', error);
-      });
-    }
+      <div class="cont_input coment_edit">
+      <p class="title" style="font-size: 30px;">Edita tus comentarios</p>
+                  <label for="">Nombre / Usuario</label>
+                  <input class="input" type="text" id="nombre" placeholder="Nombre o Usuario" value="${data.nombre}" >
+                  <label for="">Titulo</label>
+                  <input class="input" type="text" id="titulo" placeholder="Titulo" value="${data.titulo}">
+                  <label for="">Comentario</label>
+                  <textarea class="input_coment" name=""  id="texto" cols="30" rows="10" 
+                  placeholder="Comentario" style="margin-left: 10px;" value="${data.texto}">
+                  </textarea>
+                  <!--<input class="input_coment" type="text" id="texto" placeholder="Comentario" value="">-->
+      </div><br>
+      <button class="boton2 btn"  type="submit">Actualizar</button>
+    
+      `
+      console.log('Dato específico recuperado:', data);
+    })
+    .catch(error => {
+      console.error('Error en la solicitud:', error);
+    });
+  }
 
-get_one(id);
+Get_One(id);
+ 
+
+//REDIRECCIONA A LA PAGINA COMENTARIOS==================================
+function redirectPage(){
+      //location.href = 'http://localhost:5500/templates/comentarios.html';
+      location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
+   
+}
+//======================================================================   
+
+
 
 document.getElementById('formTask').addEventListener('submit', saveTask)
 
@@ -65,10 +71,11 @@ function saveTask(e){
     };
     console.log(postData);
     editData(postData);
-    //e.preventDefault();
+    
 
     alert('tarea actualizada')
-    //location.href = 'http://localhost:5001';
+    e.preventDefault();
+    redirectPage();
     }
 
 function editData(datos){
@@ -77,7 +84,6 @@ function editData(datos){
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        // Puedes agregar otros encabezados si es necesario
       },
       body: JSON.stringify(datos)
     })
@@ -95,3 +101,4 @@ function editData(datos){
       });
       
 }
+
