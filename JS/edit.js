@@ -1,5 +1,5 @@
-//const API_URL= "http://localhost:5000";
-const API_URL= "https://gaby0101.pythonanywhere.com/";
+const API_URL= "http://localhost:5000";
+//const API_URL= "https://gaby0101.pythonanywhere.com/";
 
 let queryS = new URLSearchParams(window.location.search)
 let param = Object.fromEntries(queryS.entries())
@@ -28,10 +28,9 @@ function Get_One(id){
                   <label for="">Titulo</label>
                   <input class="input" type="text" id="titulo" placeholder="Titulo" value="${data.titulo}">
                   <label for="">Comentario</label>
-                  <textarea class="input_coment" name=""  id="texto" cols="30" rows="10" 
-                  placeholder="Comentario" style="margin-left: 10px;" value="${data.texto}">
-                  </textarea>
-                  <!--<input class="input_coment" type="text" id="texto" placeholder="Comentario" value="">-->
+                  <input class="input_coment" type="text" id="texto" maxlength="100" 
+                  placeholder="Comentario(max.100 Letras)" style="margin-left: 10px;  word-wrap: break-word;" value="${data.texto}">
+                  
       </div><br>
       <button class="boton2 btn"  type="submit">Actualizar</button>
     
@@ -48,8 +47,8 @@ Get_One(id);
 
 //REDIRECCIONA A LA PAGINA COMENTARIOS==================================
 function redirectPage(){
-      //location.href = 'http://localhost:5500/templates/comentarios.html';
-      location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
+      location.href = 'http://localhost:5500/templates/comentarios.html';
+      //location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
    
 }
 //======================================================================   

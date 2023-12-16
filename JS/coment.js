@@ -1,8 +1,8 @@
 document.getElementById('formTask').addEventListener('submit', saveTask)
 
 
-const API_URL= "https://gaby0101.pythonanywhere.com/";
-//const API_URL= "http://localhost:5000";
+//const API_URL= "https://gaby0101.pythonanywhere.com/";
+const API_URL= "http://localhost:5000";
 
 
 //ENVIA LOS DATOS A LA BESE DE DATOS=================================
@@ -42,12 +42,12 @@ function getData(){
       <h2 class="name">${comentario.nombre}</h2>
       <h4 class="titulo">${comentario.titulo}</h4>
       <p class=" comentario">${comentario.texto}</p><br>
-            <button class="boton" type="submit"  onclick="deleteId(${comentario.id})">
-            <i class="fa-solid fa-trash-can" style="color: rgb(252, 59, 59);"></i>
-            </button>
-            <button class="boton"><a href="edit.html?id =${comentario.id}" >
-            <i class="fa-solid fa-pen-to-square" style="color: rgb(212, 158, 7);"></i></a>
-            </button>
+      <button class="boton" type="submit"  onclick="deleteId(${comentario.id})">
+      <i class="fa-solid fa-trash-can" style="color: rgb(243, 8, 8);"></i>
+      </button>
+      <button class="boton"><a href="edit.html?id =${comentario.id}" >
+      <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 200, 47);"></i></a>
+      </button>
             
       </div>
       
