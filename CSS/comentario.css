@@ -23,10 +23,15 @@
 .cont_input input{
     margin: auto;
     margin: 10px;
-   
 }
 label{
     font-size: 22px;
+}
+
+.contenedor_coment{
+    /*background: #999;*/
+    width: 100%;
+    display: flex;
 }
 
 .coment{
@@ -47,7 +52,6 @@ label{
     width: 500px;
     height: 50px;
     font-size: 22px;
-    
 }
 
 .input_coment{
