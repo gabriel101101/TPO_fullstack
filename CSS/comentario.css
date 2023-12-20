@@ -60,8 +60,8 @@ label{
 .contenedor_coment{
     /*background: #999;*/
     width: 100%;
-    display: flex;
 }
+
 
 .coment{
     background-color: rgb(138, 202, 181);

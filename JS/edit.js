@@ -46,8 +46,8 @@ Get_One(id);
 
 //REDIRECCIONA A LA PAGINA COMENTARIOS==================================
 function redirectPage(){
-      location.href = 'http://localhost:5500/templates/comentarios.html';
-      //location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
+      //location.href = 'http://localhost:5500/templates/comentarios.html';
+      location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
    
 }
 //======================================================================   

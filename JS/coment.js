@@ -39,7 +39,7 @@ function getData(){
       const tpl = comentarios.map((comentario) => 
       `
       
-      <div class="coment">
+      <div class="coment" >
       <h2 class="name">${comentario.nombre}</h2>
       <h4 class="titulo">${comentario.titulo}</h4>
       <p class=" comentario">${comentario.texto}</p><br>
@@ -50,6 +50,7 @@ function getData(){
       <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 200, 47);"></i></a>
       </button>     
       </div>
+      
       
       
       `);
