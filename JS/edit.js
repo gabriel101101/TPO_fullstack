@@ -22,7 +22,6 @@ function Get_One(id){
       HTMLResponse.innerHTML = `
       
       <div class="cont_input coment_edit">
-      <p class="title" style="font-size: 30px;">Edita tus comentarios</p>
                   <label for="">Nombre / Usuario</label>
                   <input class="input" type="text" id="nombre" placeholder="Nombre o Usuario" value="${data.nombre}" >
                   <label for="">Titulo</label>
@@ -47,8 +46,8 @@ Get_One(id);
 
 //REDIRECCIONA A LA PAGINA COMENTARIOS==================================
 function redirectPage(){
-      //location.href = 'http://localhost:5500/templates/comentarios.html';
-      location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
+      location.href = 'http://localhost:5500/templates/comentarios.html';
+      //location.href = 'https://gabriel101101.github.io/TPO_fullstack/templates/comentarios.html';
    
 }
 //======================================================================   
