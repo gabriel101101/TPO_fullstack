@@ -28,7 +28,7 @@ function Get_One(id){
                   <input class="input" type="text" id="titulo" placeholder="Titulo" value="${data.titulo}">
                   <label for="">Comentario</label>
                   <input class="input_coment" type="text" id="texto" maxlength="100" 
-                  placeholder="Comentario(max.100 Letras)" style="margin-left: 10px;  word-wrap: break-word;" value="${data.texto}">
+                  placeholder="Comentario(max.100 Caracteres)" style="margin-left: 10px;  word-wrap: break-word;" value="${data.texto}">
                   
       </div><br>
       <button class="boton2 btn"  type="submit">Actualizar</button>
