@@ -12,13 +12,6 @@
     margin: 2em 0em 1em 0em;
 
 }
-.tx{
-    text-decoration: none;
-    color: #555;
-    font-weight: 600;
-    font-size: 20px;
-    border-bottom: 2px solid #f2f2f2;
-}
 
 .clima{
     background: #fff;
@@ -40,13 +33,16 @@
     font-size: 20px;
 }
 
+.cont_text{
+    text-align: center;
+}
 
 .bienvenida{
-    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
     margin: auto;
     display: flex;
     background-color: #7de3fd;
-    height: 445px;
+    height: 455px;
     width:1100px;
     border-radius: 8px;
     /*
@@ -65,10 +61,25 @@
    
   }
   .texto_1{
-    color:#222;
+    padding-top: 5px;
+    color:#555;
     font-weight: 300;
     font-size: 19px;
   }
+  iframe{
+    width: 600px;
+    height: 445px;
+  }
+  .tx{
+    
+    text-decoration: none;
+    color: #9c9c9c;
+    font-weight: 600;
+    font-size: 25px;
+    /*border-bottom: 2px solid #f2f2f2;*/
+    padding-bottom: 20px;
+ }
+ 
   .video{padding: 3px 3px 3px 3px;}
 
 /*===========================================================================*/
