@@ -1,0 +1,78 @@
+/*===========================================================================*/
+/*====EXCURSIONES========BUENOS AIRES============EXCURSIONES==================*/
+/*===========================================================================*/
+
+
+
+.bsas_gal1::before{content: "CABALLITO EN TRANVÍA";}
+.bsas_gal2::before{content: "MUSEO QUINQUELA";}
+.bsas_gal3::before{content: "VISITÁ EL CENTRO ANA FRANK";}
+.bsas_gal4::before{content: "AVISTAJE DE AVES EN LIBERTAD";}
+.bsas_gal5::before{content: "CONOCÉ EL MUSEO XUL SOLAR";}
+.bsas_gal6::before{content: "BOTÁNICA EN EL ECOPARQUE";}
+
+.item1{background-image: url('https://cdn2.buenosaires.gob.ar/turismo/tranvia-de-caballito-600x350.jpg');}
+.item2{background-image: url('https://buenosaires.gob.ar/sites/default/files/media/image/2022/08/23/07b0812d81d53c3270287eac3c3fe750ab4fa2b4.jpg');}
+.item3{background-image: url('https://th.bing.com/th/id/R.428cf607ad2b7e40b5984cb9bc298728?rik=mcmckUNJR0BcbQ&pid=ImgRaw&r=0');}
+.item4{background-image: url('https://cdn2.buenosaires.gob.ar/turismo/avistaje-aves-reserva-ecologica-600x350.jpg');}
+.item5{background-image: url('https://cdn2.buenosaires.gob.ar/turismo/museoXulSolar600x350.jpg');}
+.item6{background-image: url('https://th.bing.com/th/id/R.d9bdcf589f81856d5d96eef3ea263ce4?rik=LBYHDUcivniM5A&pid=ImgRaw&r=0');}
+
+/*===========================================================================*/
+/*====EXCURSIONES=========== MENDOZA============EXCURSIONES==================*/
+/*===========================================================================*/
+
+.mend_gal1::before{content: "Cañón Atuel";}
+.mend_gal2::before{content: "Termas Cacheuta";}
+.mend_gal3::before{content: "Bodegas en el Valle de Uco";}
+.mend_gal4::before{content: "Reserva El Manzano";}
+.mend_gal5::before{content: "Pie de los Andes";}
+.mend_gal6::before{content: "Reserva Villavicencio";}
+
+.item7{background-image: url('https://www.turismoestacion.tur.ar/wp-content/uploads/2016/02/600x6001357571635_sanrafael4.jpg');}
+.item8{background-image: url('https://termascacheuta.com/wp-content/uploads/2021/12/maianaestrada-1593990673411-400x400-1.jpg');}
+
+.item9{background-image: url('https://gower.ar/wp-content/uploads/2021/09/Blog-Valle-de-Uco-1.jpg');}
+.item10{background-image: url('https://100metros.com.ar/04-2023/resize_1681071290.jpg');}
+
+.item11{background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/ec/d4/3b.jpg');}
+.item12{background-image: url('https://www.losandes.com.ar/resizer/naubxBZIQzUy2yIkypZP1w4IhRc=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/5WGRGWMIS5E5VN6PNOSONP3VT4.jpeg');}
+
+
+/*===========================================================================*/
+/*====EXCURSIONES========== CORDOBA ============EXCURSIONES==================*/
+/*===========================================================================*/
+
+
+.cord_gal1::before{content: "Las 7 Cascadas-La Falda";}
+.cord_gal2::before{content: "Pekos Multiparke-Carlos Paz";}
+.cord_gal3::before{content: "Reserva Natural-Santa Rosa";}
+.cord_gal4::before{content: "La Olla-Santa Rosa";}
+.cord_gal5::before{content: "Centro de Villa Generl Belgrano";}
+.cord_gal6::before{content: "Dique los Molinos-Villa General Belgrano";}
+
+.item13{background-image: url('https://viajesynoticias.com.ar/anexos/fotos/2015/01/2340_img.jpg');}
+.item14{background-image: url('https://www.quehacemosma.com/wp-content/uploads/2020/12/pekos.jpg');}
+.item15{background-image: url('https://viapais.com.ar/resizer/JWvq9Z_5r2S9HAdaP7wVahWrpR4=/1023x767/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/MZSTMNBQMY2DEMJSGY3TCNTGHA.jpg');}
+.item16{background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0f/4f/25/7a/rio-y-playa.jpg');}
+.item17{background-image: url('https://www.eldiariodecarlospaz.com.ar/u/fotografias/fotosnoticias/2023/1/14/244838.jpg');}
+.item18{background-image: url('https://alugarbueno.com/wp-content/uploads/2022/01/025.jpg');}
+
+
+/*============================================================================*/
+/*====EXCURSIONES===========RIO NEGRO============EXCURSIONES==================*/
+/*============================================================================*/
+
+.rioneg_gal1::before{content: "Bariloche";}
+.rioneg_gal2::before{content: "Cerro Campanario";}
+.rioneg_gal3::before{content: "Cerro Catedral";}
+.rioneg_gal4::before{content: "Cerro Tronador";}
+.rioneg_gal5::before{content: "Cerro Otto";}
+.rioneg_gal6::before{content: "Lago Correntoso";}
+
+.item19{background-image: url('https://www.thetraveler.net/images/incontournables/argentine-san-carlos-de-bariloche.jpg');}
+.item20{background-image: url('https://www.civitatis.com/f/argentina/bariloche/tour-panoramico-bariloche-589x392.jpg');}
+.item21{background-image: url('https://www.infobae.com/new-resizer/ufv1v61RhGt8Y1afTCUYGdWRmNo=/992x558/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/09/13113520/Turismo-nacional-7.jpg');}
+.item22{background-image: url('https://www.patagonline.com/wp-content/uploads/2022/12/8.jpg');}
+.item23{background-image: url('https://bariloche.org/wp-content/uploads/2014/11/cerro_otto.jpg');}
+.item24{background-image: url('https://www.viajes.cl/hs-fs/hubfs/Camino%20en%20Villa%20La%20Agostura%2c%20Argentina.jpg?width=2121&name=Camino%20en%20Villa%20La%20Agostura%2c%20Argentina.jpg');}
