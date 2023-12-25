@@ -4,12 +4,12 @@
 
 
 
-.bsas_gal::before{content: "CABALLITO EN TRANVÍA";}
-.bsas_gal::before{content: "MUSEO QUINQUELA";}
-.bsas_gal::before{content: "VISITÁ EL CENTRO ANA FRANK";}
-.bsas_gal::before{content: "AVISTAJE DE AVES EN LIBERTAD";}
-.bsas_gal::before{content: "CONOCÉ EL MUSEO XUL SOLAR";}
-.bsas_gal::before{content: "BOTÁNICA EN EL ECOPARQUE";}
+.bsas_gal1::before{content: "CABALLITO EN TRANVÍA";}
+.bsas_gal2::before{content: "MUSEO QUINQUELA";}
+.bsas_gal3::before{content: "VISITÁ EL CENTRO ANA FRANK";}
+.bsas_gal4::before{content: "AVISTAJE DE AVES EN LIBERTAD";}
+.bsas_gal5::before{content: "CONOCÉ EL MUSEO XUL SOLAR";}
+.bsas_gal6::before{content: "BOTÁNICA EN EL ECOPARQUE";}
 
 
 /*===========================================================================*/
