@@ -87,7 +87,6 @@
 /*===========================================================================*/
 
 /* Estilo para la sección de destino y carrousel */
-
 .content-img{
     width: 900px;
     overflow: hidden;
@@ -118,7 +117,6 @@
 }
 
 /* Estilo para el contenedor de lugares turísticos */
-
 .tourist-spot {
     border: 1px solid #ccc;
     padding: 20px;
@@ -339,7 +337,6 @@
     border-radius: 10px;
     transition: 0.2s;
 }
-
 .card:hover{
     transform: scale(1.02);
     box-shadow: 0 5px 20px #033f49;
@@ -405,75 +402,71 @@
 /*====HOTELES========HOTELES===========HOTELES=========HOTELES===============*/
 /*===========================================================================*/
 
-.contenedor_hoteles{
+.hotel_name{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 25%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    opacity: 1;
+}
+.name_display{
+    display: none;
+}
+
+.hotel_name:hover .name_display{
+    display: inline;
+}
+.hotel_name:hover{
+    background-color: rgba(12, 18, 18, 0.5);
+    border-radius: 15px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.hotel_name::before{transform: scale(1); }
+
+
+/*=================BUENOS AIRES===================*/
+.hotel_img1{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/22113570.jpg?k=50944ce5e79a439a84781c80e40564ad174a0eb0955bcc5b5033469b4f44bfa7&o=&hp=1');}
+.hotel_img2{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/260465067.jpg?k=5a124962ec9c28175234d4e3095d79936231081f4e1b4b5821f78a86e986f974&o=&hp=1');}
+.hotel_img3{background-image: url('https://www.hilton.com/im/en/BUEHIHH/9576099/hilton-buenos-aires-external-view.jpg?impolicy=crop&cw=5760&ch=3225&gravity=NorthWest&xposition=0&yposition=307&rw=768&rh=430');}
+.hotel_img4{background-image: url('https://static-new.lhw.com/HotelImages/Final/LW7010/lw7010_68120970_720x450.jpg');}
+.hotel_img5{background-image: url('https://madero.buenosaireshotelsargentina.com/data/Images/OriginalPhoto/12772/1277264/1277264722/image-buenos-aires-hotel-madero-7.JPEG');}
+.hotel_img6{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/10953633.jpg?k=806af303357bc95828276fd6ff367abb671e2cbd600e00a8ba6ec8b2158117be&o=&hp=1');}
+/*=================MENDOZA===================*/
+.hotel_img7{background-image: url('https://hotel-ibis-mendoza.mendoza-hotels-ar.com/data/Photos/OriginalPhoto/10064/1006425/1006425871/mendoza-ibis-hotel-5521-photo-17.JPEG');}
+.hotel_img8{background-image: url('https://img.nh-hotels.net/dyPeA/qyaXvB/original/NH_Ciudad_de_Santiago_Facade_Night_Lights_on_Entrance_Plaque_External_Signage_NH_Letters_Symbol.jpg?output-quality=80&resize=1600:*&background-color=white');}
+.hotel_img9{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/22010948.jpg?k=3626afe4be74a94ba3b81c694a9622b2b4c8bae8762a41082c5f03d70d314cc8&o=&hp=1');}
+.hotel_img10{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/448715257.jpg?k=ca0dd00397a09eb9c9b585f4dc8145b6315aa9d185bfcda9c4f00f394fb5775e&o=&hp=1');}
+.hotel_img11{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/40940336.jpg?k=469fd9108985278f74c1a07cac263bf1257d3616e47fde759bd9453ec23aadf0&o=&hp=1');}
+.hotel_img12{background-image: url('https://villaggiohotel.gr/wp-content/uploads/2021/09/DJI_0366.jpg');}
+/*=================CORDOBA===================*/
+.hotel_img13{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/235217060.jpg?k=b1c11c9f280d3f21ccb30c3015d0a9cddbd155c21fd93b6e4cc33a49b8cea6f3&o=&hp=1');}
+.hotel_img14{background-image: url('https://hoteles.en-la-argentina.com.ar/images/hoteles/1397342851-1.jpg');}
+.hotel_img15{background-image: url('https://www.hostalgolondrinas.com.ar/wp-content/uploads/slider-DJI_0196-1.jpg');}
+.hotel_img16{background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/fa/53/16/hotel-las-cascadas.jpg?w=700&h=-1&s=1');}
+.hotel_img17{background-image: url('https://www.hjargentina.com/img/hoteles/19/56.jpg');}
+.hotel_img18{background-image: url('https://cf.bstatic.com/xdata/images/hotel/max500/10601848.jpg?k=4040247919b475ad0eb5cd9e93a30fab797ce99663cb9a610ffcc212aa4534a3&o=&hp=1');}
+/*=================RIO NEGRO===================*/
+.hotel_img19{background-image: url('https://lh3.googleusercontent.com/p/AF1QipPzYTB7Qrl_P4Ba5Zswk4uUzbxz_ZALj-VMqiu2=w287-h192-n-k-rw-no-v1');}
+.hotel_img20{background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/d8/91/ef/frente-y-entrada.jpg?w=700&h=-1&s=1');}
+.hotel_img21{background-image: url('https://lh3.googleusercontent.com/p/AF1QipMTHmeaGrUD-n-7Jpo8AQPH8apBGTbuUTSvUKzB=w287-h192-n-k-rw-no-v1');}
+.hotel_img22{background-image: url('https://llaollao.com/resources/img/hero-home1.jpg');}
+.hotel_img23{background-image: url('https://www.hotelpuertoblest.com.ar/nueva/wp-content/uploads/2021/10/dest-2.jpg');}
+.hotel_img24{background-image: url('https://hotel.bosquedelnahuel.com.ar/wp-content/uploads/2019/01/62.jpg');}
+
+
+.grid_hoteles{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery_hoteles{
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr 1fr));
-    /*grid-template-columns: repeat(4, 1fr);*/
-    max-width: 100%;
-    /*grid-auto-rows: 250px;*/
-    grid-template-areas:  
-    "img7 img7 img8 img8 img9 img9"
-    "img10 img10 img11 img11 img12 img12";
-
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-    /*
-    gap: .8em;*/
-}
-
-.hoteles__pic{
-    position: relative;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hoteles__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 450px;
-    height:250px    ;
-    background-color: rgba(12, 18, 18, 0.5); 
-    display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    color: white; 
-    opacity: 0; 
-    transition: opacity 0.5s; 
-    border-radius: 28px;
-    text-decoration: none; 
+    border-radius: 15px;
+    transition: trnsform 0.3s ease-in-out;
+    border: solid 1px rgb(255, 245, 188);
 }
 
-.hoteles__pic:hover .hoteles__overlay {opacity: 1; }
-
- .hoteles__pic:hover::before{transform: scale(1); }
-
-.hoteles__pic--g7{grid-area: img7;}
-.hoteles__pic--g8{grid-area: img8;}
-.hoteles__pic--g9{grid-area: img9;}
-.hoteles__pic--g10{grid-area: img10;}
-.hoteles__pic--g11{grid-area: img11;}
-.hoteles__pic--g12{grid-area: img12;}
-
-.hoteles__img{
-    width: 450px;
-    height:250px;
-    object-fit:cover;
-    border-radius: 23px;
-    border: 0.3px solid #7873f5;
-}
 
 /*--=====================MAPA===================--*/
   /*--============================================--*/
@@ -537,12 +530,15 @@
         padding: 0px 10px;
     }
     /*-------------HOTELES-----------*/
+    .name_display{font-size: 30px;}
+    .hotel_name{padding-top: 20%;}
+    /*
     .gallery_hoteles{
         grid-template-areas:  
         "img7 img7 img8 img8"
         "img9 img9 img10 img10"
         "img11 img11 img12 img12";
-    }  
+    }  */
 }
 
 @media screen and (max-width: 480px){
