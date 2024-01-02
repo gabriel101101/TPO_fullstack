@@ -3,6 +3,47 @@
 /*===========================================================================*/
 /*====BIENVENIDA==========BIENVENIDA===========BIENVENIDA====================*/
 /*===========================================================================*/
+.seccion_bienvenida{
+    display: none;
+}
+
+.contenedor-video{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+}
+.contenedor-enlace{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7de3fd;
+    margin: 0px;
+    border-radius: 3px;
+}
+.cx{
+    display: flex;
+    width: 300px;
+    align-items: flex-start;
+
+
+    text-decoration: none;
+    color: #9c9c9c;
+    font-weight: 600;
+    font-size: 25px;
+    /*border-bottom: 2px solid #f2f2f2;*/
+    padding-bottom: 20px;
+    border-radius: 3px;
+ }
+
+ .cx:hover{
+    background-color: #fff;
+    
+ }
+
+
+
+
 
 .title{
     color: #424949;
@@ -71,7 +112,12 @@
     height: 445px;
   }
   .tx{
-    
+    /*
+    display: flex;
+    width: 300px;
+    align-items: flex-start;
+*/
+
     text-decoration: none;
     color: #9c9c9c;
     font-weight: 600;
@@ -79,8 +125,28 @@
     /*border-bottom: 2px solid #f2f2f2;*/
     padding-bottom: 20px;
  }
+
  
-  .video{padding: 3px 3px 3px 3px;}
+ 
+.video{padding: 3px 3px 3px 3px;}
+
+@media screen and (max-width: 1000px){
+    .seccion_bienvenida{display: inline;}
+    .bienvenida{display: none;}
+
+}
+
+@media screen and (max-width: 600px){
+    /*===========BIENVENIDA=========*/
+    .contenedor-video{padding: 5px;}
+    iframe{width: 400px;height: 245px;}
+
+    .contenedor-enlace{width: 400px;justify-content: space-evenly;}
+
+    .cx{width: 200px;font-size: 20px;border-radius: 3px;}
+
+}
+
 
 /*===========================================================================*/
 /*====LUGARES TURISTICOS=====LUGARES TURISTICOS======LUGARES TURISTICOS======*/
@@ -156,6 +222,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 10px #033f49;
+   
 }
 
 .carousel-slide {
@@ -226,6 +293,9 @@
 .next-button {
     right: 10px;
 }
+
+
+
 
 /*===========================================================================*/
 /*====EXCURSIONES========BUENOS AIRES============EXCURSIONES==================*/
@@ -505,6 +575,9 @@
 }
 
 @media screen and (max-width: 900px){
+    /*----------TURISMO---------------*/
+    .content-img{width: 600px;height:400px;}
+    .content-img img{height: 400px;}
     /*----------EXCURSIONES----------*/
     gallery__img{width: 400px;}
     /*----------HOTELES---------------*/
@@ -522,8 +595,7 @@
 }
 
 @media screen and (max-width: 700px){
-    /*-------------EXCURSIONES----------*/
-    /*gallery__img{ width: 300px;}*/
+    /*-------------EXCURSIONES-------*/
     .grid-container{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         grid-auto-rows: 150px;
@@ -532,13 +604,12 @@
     /*-------------HOTELES-----------*/
     .name_display{font-size: 30px;}
     .hotel_name{padding-top: 20%;}
-    /*
-    .gallery_hoteles{
-        grid-template-areas:  
-        "img7 img7 img8 img8"
-        "img9 img9 img10 img10"
-        "img11 img11 img12 img12";
-    }  */
+}
+
+@media screen and (max-width: 600px){
+    .content-img{width: 360px;height: 350px;}
+    .content-img img{height: 360px;}
+    .carousel-container{margin: 5px;}
 }
 
 @media screen and (max-width: 480px){
